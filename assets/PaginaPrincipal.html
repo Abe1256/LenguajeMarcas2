@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Nuestro Sitio Web</h1>
+        <nav>
+            <ul>
+                <li><a href="pagina1.html">Página 1</a></li>
+                <li><a href="pagina2.html">Página 2</a></li>
+                <li><a href="pagina3.html">Página 3</a></li>
+                <li><a href="pagina4.html">Página 4</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Introducción</h2>
+            <p>Este sitio web está diseñado para proporcionar información valiosa sobre diversos temas. Aquí encontrarás recursos útiles y un formulario para contactarnos.</p>
+        </section>
+        <section>
+            <h2>Formulario de Contacto</h2>
+            <form action="enviar.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="telefono">Teléfono:</label>
+                <input type="tel" id="telefono" name="telefono" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" required></textarea>
+                
+                <label for="fecha">Fecha:</label>
+                <input type="date" id="fecha" name="fecha" required>
+                
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2023 Nuestro Sitio Web. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
